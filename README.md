@@ -1,2 +1,3 @@
-# attendees
-Repository for the MLZ training attendess
+# MLZ Training
+
+Welcome to the MLZ Training!
