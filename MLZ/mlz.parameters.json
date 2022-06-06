@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "resourcePrefix": {
-      "value": "fgva"
+      "value": ""
     },
     "resourceSuffix": {
       "value": "lab"
@@ -14,40 +14,40 @@
       }
     },
     "hubVirtualNetworkAddressPrefix": {
-      "value": "10.28.64.0/23"
+      "value": ""
     },
     "hubSubnetAddressPrefix": {
-      "value": "10.28.64.0/25"
+      "value": ""
     },
     "bastionHostSubnetAddressPrefix": {
-      "value": "10.28.65.0/26"
+      "value": ""
     },
     "firewallClientSubnetAddressPrefix": {
-      "value": "10.28.65.64/26"
+      "value": ""
     },
     "firewallManagementSubnetAddressPrefix": {
-      "value": "10.28.65.128/26"
+      "value": ""
     },
     "identityVirtualNetworkAddressPrefix": {
-      "value": "10.28.66.0/25"
+      "value": ""
     },
     "identitySubnetAddressPrefix": {
-      "value": "10.28.66.0/26"
+      "value": ""
     },
     "operationsVirtualNetworkAddressPrefix": {
-      "value": "10.28.66.128/25"
+      "value": ""
     },
     "operationsSubnetAddressPrefix": {
-      "value": "10.28.66.128/26"
+      "value": ""
     },
     "sharedServicesVirtualNetworkAddressPrefix": {
-      "value": "10.28.67.0/25"
+      "value": ""
     },
     "sharedServicesSubnetAddressPrefix": {
-      "value": "10.28.67.0/26"
+      "value": ""
     },
     "firewallSupernetIPAddress": {
-      "value": "10.28.64.0/21"
+      "value": ""
     },
     "deployRemoteAccess": {
       "value": true
@@ -68,7 +68,7 @@
       "value": true
     },
     "emailSecurityContact": {
-      "value": "fgilbert@microsoft.com"
+      "value": ""
     }
   }
 }
