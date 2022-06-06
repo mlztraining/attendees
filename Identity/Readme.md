@@ -1,0 +1,1 @@
+Content for the Identity in DoD Azure environments session

@@ -1,0 +1,1 @@
+Content for the Defender for Cloud Hands-on session

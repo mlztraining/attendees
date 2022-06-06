@@ -1,0 +1,1 @@
+Content for the DoD-compliant compute images Hands-on session
