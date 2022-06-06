@@ -1,0 +1,2 @@
+$vmSecret = Read-Host -Prompt "Please type a secure password for the Linux and Windows VMs" -AsSecureString
+New-AzDeployment -Name mlz -Location USGovVirginia -TemplateFile "" -TemplateParameterFile mlz.parameters.json -linuxVmAdminPasswordOrKey $vmSecret -windowsVmAdminPassword $vmSecret -Verbose

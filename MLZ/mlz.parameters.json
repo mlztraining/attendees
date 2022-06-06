@@ -1,0 +1,74 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "resourcePrefix": {
+      "value": "fgva"
+    },
+    "resourceSuffix": {
+      "value": "lab"
+    },
+    "tags": {
+      "value": {
+        "description": "deployed as part of the MLZ Hands-on lab on 06/2022"
+      }
+    },
+    "hubVirtualNetworkAddressPrefix": {
+      "value": "10.28.64.0/23"
+    },
+    "hubSubnetAddressPrefix": {
+      "value": "10.28.64.0/25"
+    },
+    "bastionHostSubnetAddressPrefix": {
+      "value": "10.28.65.0/26"
+    },
+    "firewallClientSubnetAddressPrefix": {
+      "value": "10.28.65.64/26"
+    },
+    "firewallManagementSubnetAddressPrefix": {
+      "value": "10.28.65.128/26"
+    },
+    "identityVirtualNetworkAddressPrefix": {
+      "value": "10.28.66.0/25"
+    },
+    "identitySubnetAddressPrefix": {
+      "value": "10.28.66.0/26"
+    },
+    "operationsVirtualNetworkAddressPrefix": {
+      "value": "10.28.66.128/25"
+    },
+    "operationsSubnetAddressPrefix": {
+      "value": "10.28.66.128/26"
+    },
+    "sharedServicesVirtualNetworkAddressPrefix": {
+      "value": "10.28.67.0/25"
+    },
+    "sharedServicesSubnetAddressPrefix": {
+      "value": "10.28.67.0/26"
+    },
+    "firewallSupernetIPAddress": {
+      "value": "10.28.64.0/21"
+    },
+    "deployRemoteAccess": {
+      "value": true
+    },
+    "windowsVmSize": {
+      "value": "Standard_B2s"
+    },
+    "windowsVmSku": {
+      "value": "2022-datacenter-smalldisk"
+    },
+    "deployPolicy": {
+      "value": true
+    },
+    "policy": {
+      "value": "IL5"
+    },
+    "deployDefender": {
+      "value": true
+    },
+    "emailSecurityContact": {
+      "value": "fgilbert@microsoft.com"
+    }
+  }
+}
