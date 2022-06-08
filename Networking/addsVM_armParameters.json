@@ -1,0 +1,79 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "VmName": {
+            "value": "XX-DC-LAB-01"
+        },
+        "size": {
+            "value": "Standard_D2s_v4"
+        },
+        "ImagePublisher": {
+            "value": "MicrosoftWindowsServer"
+        },
+        "ImageOffer": {
+            "value": "WindowsServer"
+        },
+        "ImageSKU": {
+            "value": "2022-datacenter-smalldisk"
+        },
+        "OSDiskType": {
+            "value": "Premium_LRS"
+        },
+        "VmDataDisks": {
+            "value": [
+                {
+                    "lun": 1,
+                    "name": "DC-LAB-01-DATADISk-01",
+                    "createOption": "Empty",
+                    "diskSizeGB": 10,
+                    "managedDisk": {
+                        "storageAccountType": "Premium_LRS"
+                    }
+                }
+            ]
+        },
+        "VNETResourceGroup": {
+            "value": "XXX-rg-identity-lab"
+        },
+        "VNETName": {
+            "value": "XXX-vnet-identity-lab"
+        },
+        "vnetSubnetName": {
+            "value": "XXX-snet-identity-lab"
+        },
+        "privateIpAddress": {
+            "value": "10.XX.XX.4"
+        },
+        "adDnsServers": {
+            "value": [
+                "10.XX.XX.4",
+                "168.63.129.16"
+            ]
+        },
+        "systemTag": {
+            "value": "Lab"
+        },
+        "componentTag": {
+            "value": "Active Directory Domain Controllers"
+        },
+        "addsDomainName": {
+            "value": "yourdomain.local"
+        },
+        "daUserName": {
+            "value": "domainadmin1"
+        },
+        "djUserName": {
+            "value": "cloudjoin1"
+        },
+        "dscConfigUrl": {
+            "value": "https://github.com/mlztraining/attendees/raw/main/Networking/addsCreateDomain.ps1.zip"
+        },
+        "dscConfigName": {
+            "value": "addsCreateDomain"
+        },
+        "supernetAddressPrefix": {
+            "value": "10.0.0.0/8"
+        }
+    }
+}

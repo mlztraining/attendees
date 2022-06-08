@@ -1,0 +1,2 @@
+$vmSecret = Read-Host -Prompt "Please type a secure domain administrator password" -AsSecureString
+New-AzResourceGroupDeployment -Name domainController -ResourceGroupName "XXXX-rg-identity-lab" -TemplateFile "addsVM_armTemplate.json" -TemplateParameterFile "addsVM_armParameters.json" -daUserPassword $vmSecret -djUserPassword $vmSecret -Verbose
